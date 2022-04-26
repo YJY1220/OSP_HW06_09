@@ -1,15 +1,18 @@
 def fib(n):
-    a,b = 1,1
-    if n==1 or n==2:
+    a, b = 1, 1
+    if n == 1 or n == 2:
         return 1
-        
-    for i in range(1,n):
-        a,b = b, a+b
+
+    for i in range(1, n):
+        a, b = b, a + b
 
     return a
 
-a= int(input ("fibonacci number:"))
-for i in range (a):
-              print(fib(i+1))
+def fibonacci():
+    a = int(input("fibonacci number:"))
+    for i in range(a):
+        print(fib(i + 1), end=' ')
+    print(f'\nF{a} = {fib(a)}')
 
-print("F",a,"=",fib(a))
+
+fibonacci()
