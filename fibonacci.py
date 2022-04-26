@@ -13,6 +13,3 @@ def fibonacci():
     for i in range(a):
         print(fib(i + 1), end=' ')
     print(f'\nF{a} = {fib(a)}')
-
-
-fibonacci()
