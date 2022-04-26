@@ -1,4 +1,4 @@
-def  set():
+def  set1():
     list1 = list(map(int,input("input the 1th list:").split()))
     list2 = list(map(int,input("input the 2nd list:").split()))
     set1 = set(list1)

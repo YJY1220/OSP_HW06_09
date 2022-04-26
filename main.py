@@ -3,17 +3,19 @@
 #!/usr/bin/python
 import sys
 import bin_to_hex
-import set
+import setcys
 
 def print_menu():
     print("Select menu: 1)bin 2)set 3)fibo 4)exit ?")           
      
-    inputed_number = int(input(" "))
+    inputed_number = int(input("", end=""))
       
     if inputed_number == 1:
        bin_to_hex.binTohex()
+       print()
     elif inputed_number == 2:
-       
+       setcys.set1()
+       print()
     elif inputed_number == 3:
        print("3")         
     elif inputed_number == 4:
